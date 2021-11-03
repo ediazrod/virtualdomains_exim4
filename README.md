@@ -8,6 +8,7 @@ The format must be;
 Each file will contain lines of the form:
 
 address : username@localhost
+
 Where "address" is the part of the email address to the left of the domain name, and "username" is the account name on the local system which should recieve that mail.
 
 To make it more clear assume:
@@ -18,7 +19,9 @@ Eve has a mail account at example.com, as does Trent.
 This gives /etc/exim4/virtual/example.com:
 
 eve : eve@localhost
+
 trent : trent@localhost
+
 For Bob who has a "catchall" address setup for example.org - /etc/exim4/virtual/example.org:
 
 * : bob@localhost
